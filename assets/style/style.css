@@ -98,6 +98,133 @@ a:nth-of-type(2) {
 }
 
 
-.en{
-  transition: bac#eeeeee 0.5s ;
+.en {
+  background: black;
+  animation: color-me-in .1s infinite;
+}
+
+@keyframes color-me-in {
+
+    0%   { background: orange; }
+    1%   { background: #ff9900; }
+    2%   { background: #ff8800; }
+    3%   { background: #ff7700; }
+    4%   { background: #ff6600; }
+    5%   { background: #ff5500; }
+    6%   { background: #ff4400; }
+    7%   { background: #ff3300; }
+    8%   { background: #ff2200; }
+    9%   { background: #ff1100; }
+    10%  { background: black; }
+    11%  { background: #000033; }
+    12%  { background: #000066; }
+    13%  { background: #000099; }
+    14%  { background: #0000cc; }
+    15%  { background: #0000ff; }
+    16%  { background: #3300ff; }
+    17%  { background: #6600ff; }
+    18%  { background: #9900ff; }
+    19%  { background: #cc00ff; }
+    20%  { background: red; }
+    21%  { background: #ff0033; }
+    22%  { background: #ff0066; }
+    23%  { background: #ff0099; }
+    24%  { background: #ff00cc; }
+    25%  { background: #ff00ff; }
+    26%  { background: #33ff00; }
+    27%  { background: #66ff00; }
+    28%  { background: #99ff00; }
+    29%  { background: #ccff00; }
+    30%  { background: yellow; }
+    31%  { background: #ffcc00; }
+    32%  { background: #ff9900; }
+    33%  { background: #ff6600; }
+    34%  { background: #ff3300; }
+    35%  { background: #ff0000; }
+    36%  { background: #3300ff; }
+    37%  { background: #6600ff; }
+    38%  { background: #9900ff; }
+    39%  { background: #cc00ff; }
+    40%  { background: purple; }
+    41%  { background: #ff00ff; }
+    42%  { background: #cc00cc; }
+    43%  { background: #990099; }
+    44%  { background: #660066; }
+    45%  { background: #330033; }
+    46%  { background: #0066ff; }
+    47%  { background: #0099ff; }
+    48%  { background: #00ccff; }
+    49%  { background: #00ffff; }
+    50%  { background: blue; }
+    51%  { background: #ccff00; }
+    52%  { background: #99ff00; }
+    53%  { background: #66ff00; }
+    54%  { background: #33ff00; }
+    55%  { background: #00ff00; }
+    56%  { background: #ff0000; }
+    57%  { background: #cc0000; }
+    58%  { background: #990000; }
+    59%  { background: #660000; }
+    60%  { background: brown; }
+    61%  { background: #663300; }
+    62%  { background: #996633; }
+    63%  { background: #cc9966; }
+    64%  { background: #ffcc99; }
+    65%  { background: #ff9966; }
+    66%  { background: #cc6633; }
+    67%  { background: #993300; }
+    68%  { background: #663300; }
+    69%  { background: #996600; }
+    70%  { background: #9966ff; }
+    71%  { background: #9933ff; }
+    72%  { background: #9900cc; }
+    73%  { background: #990099; }
+    74%  { background: #990066; }
+    75%  { background: #990033; }
+    76%  { background: #990000; }
+    77%  { background: #99cc00; }
+    78%  { background: #99ff00; }
+    79%  { background: #99cc00; }
+    80%  { background: #99ff33; }
+    81%  { background: #99ff66; }
+    82%  { background: #99ff99; }
+    83%  { background: #99ffcc; }
+    84%  { background: #99ffff; }
+    85%  { background: #ccffcc; }
+    86%  { background: #ccff99; }
+    87%  { background: #ccff66; }
+    88%  { background: #ccff33; }
+    89%  { background: #ccff00; }
+    90%  { background: #cccccc; }
+    91%  { background: #999999; }
+    92%  { background: #666666; }
+    93%  { background: #333333; }
+    94%  { background: #000000
+    }
+  }
+
+  
+  .d{
+    scale: 5;
+    rotate:10turn;
+    transition-duration:10s;
+    transition-timing-function:linear;
+    translate: 100% 100%;
+}
+  
+
+.sprinter{
+  background-color: #00ff00;
+  scale: 5;
+  rotate: -2turn;
+  transition-duration: 10s;
+  transform: skew(100deg , 42deg);
+}
+
+.fixxen { 
+transform: matrix(1, 2, -1, 1, 80, 80);
+background: linear-gradient(blue, red, yellow);
+transition-duration: 10s;
+rotate: 100turn;
+scale: 7;
 }

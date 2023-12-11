@@ -1,6 +1,8 @@
 // Haalt HTML element naar JavaScript 
 let interaction = document.querySelector('a:nth-of-type(12)')
 
+const body = document.querySelector('body')
+
 
 
 interaction.addEventListener('click', jumpHandler)
@@ -34,4 +36,42 @@ design.addEventListener('click', designhandler)
 design.addEventListener('animationend', designhandler)
 function designhandler() {
   design.classList.toggle('designen')
+}
+
+
+let and = document.querySelector('a:nth-of-type(3)')
+
+and.addEventListener('click', Endhandler)
+function Endhandler() {
+  body.classList.toggle('en')
+}
+
+
+
+let development = document.querySelector('a:nth-of-type(4)')
+
+development.addEventListener('mouseover' , dedevelopment)
+
+function dedevelopment(){
+  development.classList.toggle('d')
+}
+
+let sprint = document.querySelector('a:nth-of-type(5)')
+
+sprint.addEventListener('keydown', sprint5)
+
+function sprint5(e){
+  if (e.key === 's') {
+    sprint.classList.toggle('sprinter');
+  }
+}
+
+let fix = document.querySelector('a:nth-of-type(6)')
+
+fix.addEventListener('keypress', fixxed)
+
+function fixxed(e){
+  if (e.key === 'o') {
+    fix.classList.toggle('fixxen');
+  }
 }

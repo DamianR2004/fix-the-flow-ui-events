@@ -79,3 +79,25 @@ a:nth-of-type(12) {
 }
 
 /* Jouw animaties */
+
+.open{
+  background-color: antiquewhite;
+}
+
+a:nth-of-type(2) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.designen{
+  rotate: 800deg;
+  transition-duration:10s;
+	translate:-500% 30%;
+}
+
+
+.en{
+  transition: bac#eeeeee 0.5s ;
+}

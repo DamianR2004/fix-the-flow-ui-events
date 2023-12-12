@@ -52,9 +52,13 @@ function designhandler() {
 }
 
 
+// document.queryselector haalt het derde a element uit de HTML op , deze kan ik hierdoor gebruiken in javascript
+
 let and = document.querySelector('a:nth-of-type(3)')
 
+// Dit zorgt ervoor dat er een click wordt toegevoegd aan het HTML element.
 and.addEventListener('click', Endhandler)
+// dit zorgt ervoor dat de functie met de naam endhandler kan worden uitgevoerd
 function Endhandler() {
   body.classList.toggle('en')
 }

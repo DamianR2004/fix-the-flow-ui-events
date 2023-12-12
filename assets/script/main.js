@@ -157,17 +157,26 @@ function oesj(){
 }
 
 
+// document.queryselector haalt het tiende a element uit de HTML op , deze kan ik hierdoor gebruiken in javascript
+
 
 let evenement = document.querySelector('a:nth-of-type(10)')
  
+// dit zorgt ervoor dat er een click event aan het html element wordt gekoppeld
+
 evenement.addEventListener("click", moveWithMouse, false); // wanneer de sprint 5 button is ingeklikt volgd de button de muis
  
-window.onmousemove = function (e) { // voor het volgen van de muis op de pagina
+// dit zorgt ervoor dat de cursor meegaat als er de gebruiker door de pagina heen gaat met de muis
+
+
+window.onmousemove = function (e) { 
   var x = e.pageX,
    y = e.pageY;
   evenement.style.top = (y) + 'px';
   evenement.style.left = (x) + 'px';
 };
+
+// dit zorgt ervoor dat de css class wordt uitgevoerd als er op het element wordt geklikt
 
 function moveWithMouse() {
   this.classList.add('absolute');

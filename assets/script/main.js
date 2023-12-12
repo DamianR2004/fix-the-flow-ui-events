@@ -79,17 +79,25 @@ function dedevelopment(){
   development.classList.toggle('d')
 }
 
+
+// document.queryselector haalt het vijfde a element uit de HTML op , deze kan ik hierdoor gebruiken in javascript
+
 let sprint = document.querySelector('a:nth-of-type(5)')
 
+// dit zorgt ervoor dat er een keydown event aan het html element wordt gekoppeld
 sprint.addEventListener('keydown', sprint5)
 
+// dit zorgt ervoor dat er een keydown event wordt uitgevoerd als de gebruiker op de kleine letter s klikt
 function sprint5(e){
   if (e.key === 's') {
     sprint.classList.toggle('sprinter');
   }
 }
 
+
+
 let fix = document.querySelector('a:nth-of-type(6)')
+
 
 fix.addEventListener('keypress', fixxed)
 
@@ -110,7 +118,7 @@ let thet = document.querySelector('a:nth-of-type(7)')
 thet.addEventListener('keyup' , thets)
 
 function thets(e){
-  if (e.key == 'm') {
+  if (e.key == 'M') {
     thet.classList.toggle('ded');
   }
 }

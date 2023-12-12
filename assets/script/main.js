@@ -64,10 +64,16 @@ function Endhandler() {
 }
 
 
+// document.queryselector haalt het vierde a element uit de HTML op , deze kan ik hierdoor gebruiken in javascript
 
 let development = document.querySelector('a:nth-of-type(4)')
 
+// Dit zorgt ervoor dat er een mouseover event wordt toegevoegd aan het HTML element.
+
 development.addEventListener('mouseover' , dedevelopment)
+
+
+// Nu gebeurt er iets met het element als de muis er overheen gaat, en ook met een toggle zodat het uit gaat.
 
 function dedevelopment(){
   development.classList.toggle('d')

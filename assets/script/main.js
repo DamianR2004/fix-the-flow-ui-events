@@ -95,11 +95,15 @@ function sprint5(e){
 }
 
 
-
+// document.queryselector haalt het zesde a element uit de HTML op , deze kan ik hierdoor gebruiken in javascript
 let fix = document.querySelector('a:nth-of-type(6)')
 
 
+// dit zorgt ervoor dat er een keypress event aan het html element wordt gekoppeld
+
 fix.addEventListener('keypress', fixxed)
+
+// dit zorgt ervoor dat er een keypress event wordt uitgevoerd als de gebruiker op de letter o klikt, dit mag zowel hoofd als kleine letter zijn
 
 function fixxed(e){
   if (e.key === 'o') {

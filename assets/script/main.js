@@ -129,6 +129,20 @@ function thets(e){
   }
 }
 
+// document.queryselector haalt het achtste a element uit de HTML op , deze kan ik hierdoor gebruiken in javascript
+
+let floo = document.querySelector('a:nth-of-type(8)')
+
+// dit zorgt ervoor dat er een mouseleave event aan het html element wordt gekoppeld
+
+floo.addEventListener('mouseleave', floomuis)
+
+// dit zorgt ervoor dat het mouseleave event door middel van een toggle werkt, dus als de gebruiker van het element af hoverd dan wordt de css class uitgevoerd
+
+
+function floomuis() {
+  floo.classList.toggle('floos')
+}
 
 
 

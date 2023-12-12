@@ -34,11 +34,19 @@ function () {
 
 
 
+// document.queryselector haalt het tweede a element uit de HTML op , deze kan ik hierdoor gebruiken in javascript
 
 let design = document.querySelector('a:nth-of-type(2)')
 
+// Dit zorgt ervoor dat er een click en een animationend wordt toegevoegd aan het HTML element.
+// Nu wordt het zo mogelijk dat er iets gebeurd als er geklikt wordt, daarnaast eindig de animatie
+
 design.addEventListener('click', designhandler)
 design.addEventListener('animationend', designhandler)
+
+
+// dit zorgt ervoor dat de functie met de naam designhandler kan worden uitgevoerd. nu wordt de css samengevoegd met een toggle functie
+
 function designhandler() {
   design.classList.toggle('designen')
 }

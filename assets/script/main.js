@@ -93,4 +93,40 @@ function thets(e){
 }
 
 
+let floo = document.querySelector('a:nth-of-type(8)')
 
+
+
+floo.addEventListener('mouseleave', floomuis)
+function floomuis() {
+  floo.classList.toggle('floos')
+}
+
+
+
+
+let gefocus = document.querySelector('a:nth-of-type(9)')
+
+gefocus.addEventListener('focus', oesj)
+function oesj(){
+  gefocus.classList.toggle('focussen')
+}
+
+
+
+let evenement = document.querySelector('a:nth-of-type(10)')
+ 
+evenement.addEventListener("click", moveWithMouse, false); // wanneer de sprint 5 button is ingeklikt volgd de button de muis
+ 
+window.onmousemove = function (e) { // voor het volgen van de muis op de pagina
+  var x = e.pageX,
+   y = e.pageY;
+  evenement.style.top = (y) + 'px';
+  evenement.style.left = (x) + 'px';
+};
+
+function moveWithMouse() {
+  this.classList.add('absolute');
+  this.innerHTML = "Interface";
+  console.log('hi')
+}

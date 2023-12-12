@@ -21,9 +21,7 @@ body {
 section {
   max-width: 90vw;
   height:90vh;
-  perspective: 20em;
-  transform-style: preserve-3d;
-  /* background-color: red; */
+
 }
 a {
   display: inline-block;
@@ -243,4 +241,69 @@ scale: 7;
 
 }
 
+.floos{
+  scale: 2;
+  rotate: infinite;
+  transition-duration: 10s;
+}
 
+.focussen{
+  background-image: radial-gradient(blue, yellow, white, orange, green, red, black, brown );
+  rotate: 180deg;
+  scale: 2;
+  translate: -20% -20%;
+  transition-duration: 5s;
+  border-radius: 50%;
+
+}
+
+  @keyframes animatie {
+
+    0%{
+      scale: 1;
+      rotate: y 90deg;
+      animation-timing-function: ease;
+      background-color: #00ff00;
+    }
+    
+    25%{
+      scale: 5;
+      rotate: y -90deg;
+      animation-timing-function: ease;
+      background-color: #00ccff;
+    }
+
+    50%{
+      scale: 5;
+      rotate: y 90deg;
+      animation-timing-function: ease;
+      background-color: #000066;
+    }
+
+    75%{
+      scale: 5;
+      rotate: y -90deg;
+      animation-timing-function: ease-out;
+      background-color: #2faa4f;
+    }
+
+    100%{
+     scale: 1;
+     animation-timing-function: ease-out;
+    }
+
+  }
+
+
+  .cursor{
+    animation-name: animatie;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    
+  }
+
+
+  .absolute{
+    position: absolute;
+  }

@@ -20,6 +20,10 @@ body {
 }
 section {
   max-width: 90vw;
+  height:90vh;
+  perspective: 20em;
+  transform-style: preserve-3d;
+  /* background-color: red; */
 }
 a {
   display: inline-block;
@@ -218,13 +222,25 @@ a:nth-of-type(2) {
   scale: 5;
   rotate: -2turn;
   transition-duration: 10s;
-  transform: skew(100deg , 42deg);
+  transform: skew(100deg , 42deg) translateZ(10em);
 }
 
 .fixxen { 
-transform: matrix(1, 2, -1, 1, 80, 80);
-background: linear-gradient(blue, red, yellow);
+transform: matrix(1, 2, -1, 80, 80, 80);
+background: radial-gradient(blue, red, yellow);
 transition-duration: 10s;
 rotate: 100turn;
 scale: 7;
 }
+
+.ded {
+  /* transform: rotateZ('200deg'); */
+  transition-duration: 10s;
+  rotate: 100turn;
+  /* scale: 20; */
+  background: radial-gradient(green, yellow, blue);
+  transform: translateZ(-1000em);
+
+}
+
+

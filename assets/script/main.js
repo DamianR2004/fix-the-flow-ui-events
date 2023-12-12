@@ -75,3 +75,22 @@ function fixxed(e){
     fix.classList.toggle('fixxen');
   }
 }
+
+
+
+
+
+
+
+let thet = document.querySelector('a:nth-of-type(7)')
+
+thet.addEventListener('keyup' , thets)
+
+function thets(e){
+  if (e.key == 'm') {
+    thet.classList.toggle('ded');
+  }
+}
+
+
+

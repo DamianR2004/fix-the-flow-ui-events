@@ -115,11 +115,13 @@ function fixxed(e){
 
 
 
-
+// document.queryselector haalt het zevende a element uit de HTML op , deze kan ik hierdoor gebruiken in javascript
 
 let thet = document.querySelector('a:nth-of-type(7)')
 
+// dit zorgt ervoor dat er een keyup event aan het html element wordt gekoppeld
 thet.addEventListener('keyup' , thets)
+// dit zorgt ervoor dat er een keyup event wordt uitgevoerd als de gebruiker op de hoofdletter M klikt, dit werkt dus niet als de kleine letter wordt geklikt.
 
 function thets(e){
   if (e.key == 'M') {
@@ -127,15 +129,6 @@ function thets(e){
   }
 }
 
-
-let floo = document.querySelector('a:nth-of-type(8)')
-
-
-
-floo.addEventListener('mouseleave', floomuis)
-function floomuis() {
-  floo.classList.toggle('floos')
-}
 
 
 

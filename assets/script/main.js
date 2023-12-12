@@ -14,10 +14,15 @@ function jumpHandler() {
 
 
 
+// document.queryselector haalt het eerste a element uit de HTML op , deze kan ik hierdoor gebruiken in javascript
 
 let frontend = document.querySelector('a:nth-of-type(1)')
 
+// dit zorgt ervoor dat er een dubbelclick event wordt toegevoegd aan het HTML element
+
 frontend.addEventListener('dblclick' ,
+
+// dit zorgt ervoor dat de functie kan worden uitgevoerd. En dat hij een window met een link opent
 
 function () {
   window.open('https://tenor.com/nl/view/walter-dog-bull-terrier-cute-shake-gif-17789956',

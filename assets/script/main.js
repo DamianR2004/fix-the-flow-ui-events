@@ -145,11 +145,13 @@ function floomuis() {
 }
 
 
-
+// document.queryselector haalt het negende a element uit de HTML op , deze kan ik hierdoor gebruiken in javascript
 
 let gefocus = document.querySelector('a:nth-of-type(9)')
-
+// dit zorgt ervoor dat er een focus event aan het html element wordt gekoppeld
 gefocus.addEventListener('focus', oesj)
+
+// dit zorgt ervoor dat er de css class wordt uitgevoerd als de gebruiker met TAB over het element heen gaat
 function oesj(){
   gefocus.classList.toggle('focussen')
 }
